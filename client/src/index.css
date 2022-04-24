@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('./fonts//Oswald-VariableFont_wght.ttf') format('truetype');
+}
+body {
+  margin: 0;
+  font-family: 'Oswald';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Oswwald';
+}
+@keyframes stak{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}

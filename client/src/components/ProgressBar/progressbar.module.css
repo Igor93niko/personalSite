@@ -1,0 +1,60 @@
+
+.progress{
+  position: fixed;
+  width: 10px;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation: animation 5s linear infinite;
+  top: 0;
+  right: 0;
+}
+.progress::before,
+.progress::after
+{
+  position: fixed;
+  width: 10px;
+  background: linear-gradient(to top, #008aff,#00ffe7);
+  animation: animation 5s linear infinite;
+  top: 0;
+  right: 0;
+  filter: blur(10px);
+}
+.scrollpath
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+@keyframes animation {
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+
+::-webkit-scrollbar{
+  width: 0;
+}
+
+#percent
+{
+  position: fixed;
+  top:50%;
+  right: 10px;
+  color: #00ffe7;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  writing-mode: vertical-lr;
+  font-size: 1.2em;
+  text-orientation: sideways;
+  transform: translateY(-50%) rotateX(180deg) rotateY(180deg);
+
+}

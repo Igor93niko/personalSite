@@ -1,0 +1,33 @@
+.mobMenu{
+  display:block;
+  position:absolute;
+  top:-100vh;
+  width:100%;
+  height:100vh;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s linear;
+}
+.mobMenu.active{
+  transition: 0.5s linear;
+  transform: translateY(100vh);
+}
+
+.close{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 40px;
+  color:aqua;
+  z-index: 1;
+}
+.link
+{
+  text-decoration: none;
+  color:aqua;
+}
+
+.link:hover
+{
+  cursor: pointer;
+}
+
