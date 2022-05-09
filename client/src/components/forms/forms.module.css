@@ -1,0 +1,107 @@
+.formBac
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  font-family: 'Oswald';
+  letter-spacing: 1px;
+  line-height: 12px;
+}
+
+.form
+{
+  width: 400px;
+  padding: 10px 20px;
+  background: rgb(46, 224, 200);
+  border-radius: 10px;
+  box-shadow: 0px 0px 65px rgb(46, 224, 200);
+  height: 350px;
+  transition: 0.5s linear all;
+  overflow: hidden;
+}
+
+.formHeader
+{
+  margin-bottom: 20px;
+}
+.formHeader h2
+{
+ text-align: center;
+}
+.formFooter
+{
+  display: flex;
+  justify-content: center;
+}
+
+.formSend
+{
+  width: 0;
+  opacity: 0;
+  padding: 10px 20px;
+  background: rgb(46, 224, 200);
+  border-radius: 10px;
+  box-shadow: 0px 0px 65px rgb(46, 224, 200);
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+
+.formSend h1
+{
+  text-align: center;
+}
+
+.formSend.success
+{
+  opacity: 1;
+  width: 450px;
+  transition: 0.5s linear all;
+
+}
+
+.form.success
+{
+  width: 0;
+  opacity: 0;
+  transition: 0.5s linear all;
+}
+
+.form.success .formHeader
+{
+  transform: translateY(350px);
+  transition: all linear 0.2s;
+}
+.form.success .formBody
+{
+  transform: translateY(350px);
+  transition: all linear 0.2s;
+}
+.form.success .formFooter
+{
+  transform: translateY(350px);
+  transition: all linear 0.2s;
+}
+
+.form .formHeader
+{
+  transform: translateY(0);
+  transition-delay: 0.5s;
+  transition-property: all;
+}
+.form .formBody
+{
+  transform: translateY(0);
+  transition-delay: 0.5s;
+  transition-property: all;
+}
+.form .formFooter
+{
+  transform: translateY(0);
+  transition-delay: 0.5s;
+  transition-property: all;
+}
