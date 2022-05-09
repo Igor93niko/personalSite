@@ -30,6 +30,7 @@ const Forms = () => {
   }
   return (
     <div className={cl.formBac}>
+      {classForm.form===cl.form?
       <div className={classForm.form}>
         <div className={cl.formHeader}>
           <h2>Форма обратной связи:</h2>
@@ -51,10 +52,10 @@ const Forms = () => {
         <div className={cl.formFooter}>
           <button className='btn btn-primary' onClick={clickHandler}>Отправить</button>
         </div>
-      </div>
-      <div className={classForm.formSend}>
+      </div>:null}
+      {classForm.formSend!==cl.formSend?<div className={classForm.formSend}>
         <h1>Форма успешно отправлена</h1>
-      </div>
+      </div>:null}
     </div>
   );
 };

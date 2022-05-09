@@ -8,11 +8,12 @@
   font-family: 'Oswald';
   letter-spacing: 1px;
   line-height: 12px;
+  width: 100%;
 }
 
 .form
 {
-  width: 400px;
+  width: 450px;
   padding: 10px 20px;
   background: rgb(46, 224, 200);
   border-radius: 10px;
@@ -104,4 +105,15 @@
   transform: translateY(0);
   transition-delay: 0.5s;
   transition-property: all;
+}
+
+@media only screen and (max-width:480px) {
+  .form
+  {
+    width: 260px;
+  }
+  .formSend.success
+  {
+    width: 260px;
+  }
 }

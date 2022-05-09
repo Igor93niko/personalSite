@@ -23,3 +23,23 @@ code {
     transform: scale(1);
   }
 }
+.mainImage
+{
+  margin-Top:-80px;
+  min-Height: 100vh;
+  width: 100%;
+  object-Fit:contain;
+  background-Image:url('./image/mainImage.jpg');
+  background-Repeat:no-repeat;
+  background-Size: cover;
+  image-Rendering:pixelated;
+}
+@media only screen and (max-width:480px) {
+  
+.mainImage
+{
+  background-Image:url('./image/mainImageMob.jpg');
+  background-Size: cover;
+  image-rendering:pixelated;
+}
+}
