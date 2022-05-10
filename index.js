@@ -19,6 +19,7 @@ app.use(express.json({extended:true,limit:'50mb'}));
 app.use(fileUpload({}));
 app.use(express.static('public'));
 app.use('/question',require('./routes/guestions.routes'));
+app.use('/auth',require('./routes/auth.routes'));
 
 // app.post('/upload', function(req, res) {
 //  req.files.photo.mv('public/pics/'+req.files.photo.name);

@@ -43,3 +43,97 @@ code {
   image-rendering:pixelated;
 }
 }
+
+.authPage
+{
+  position: relative;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form
+{
+  width: 400px;
+}
+
+.form .header-form h2
+{
+ text-align: center;
+}
+
+.form .body-form input
+{
+  width: 100%;
+  margin-top: 20px;
+  height: 28px;
+  font-size: 1.2em;
+  border: solid #ccc 2px;
+}
+
+.form .body-form
+{
+  padding: 20px;
+}
+
+.form .footer-form
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form .footer-form button
+{
+  padding: 10px 15px;
+  font-size: 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  transition: 0.5s all linear;
+}
+
+.form .footer-form button:hover
+{
+  background: #ccc;
+  color: #fff;
+  transition: 0.5s all linear;
+}
+
+.questions
+{
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  font-family: 'Oswald';
+}
+
+.questions table
+{
+  width: 100%;
+  text-align: center;
+  border: #000 solid 1px;
+}
+
+.questions td,th
+{
+  border: #000 solid 1px;
+}
+
+.questions th
+{
+  background: goldenrod;
+}
+
+.questions tr:nth-child(even) td
+{
+  background: goldenrod;
+}
+
+
