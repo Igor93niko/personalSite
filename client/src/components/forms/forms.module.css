@@ -15,10 +15,10 @@
 {
   width: 450px;
   padding: 10px 20px;
-  background: rgb(46, 224, 200);
+  background: linear-gradient(210deg,rgb(169, 179, 178),rgb(65, 121, 212)) ;
   border-radius: 10px;
-  box-shadow: 0px 0px 65px rgb(46, 224, 200);
-  height: 350px;
+  box-shadow: 0px 0px 65px rgb(65, 121, 212);
+  height: 360px;
   transition: 0.5s linear all;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@
   background: rgb(46, 224, 200);
   border-radius: 10px;
   box-shadow: 0px 0px 65px rgb(46, 224, 200);
-  height: 350px;
+  height: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,3 +117,29 @@
     width: 260px;
   }
 }
+
+.errors
+{
+  color: rgb(235, 17, 17);
+  font-weight: 500;
+}
+.divErr
+{
+  position: absolute;
+  top:60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.inputForm
+{
+  margin-bottom: 20px;
+}
+
+.line
+{
+  position: relative;
+}
+
