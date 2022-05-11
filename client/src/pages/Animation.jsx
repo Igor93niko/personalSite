@@ -6,6 +6,7 @@ import ProgressBar from "../components/ProgressBar/ProgressBar";
 import ScanningFinger from '../components/ScaningFinger/ScanningFinger';
 import Checkbox from '../components/checkBox/Checkbox';
 import InfiniteRoad from '../components/InfiniteRoad/InfiniteRoad';
+import Watch from '../components/Watch/Watch';
 
 
 const Animation = () => {
@@ -17,6 +18,7 @@ const Animation = () => {
       <ProgressBar/>
       <InfiniteRoad/>
       <Checkbox/>
+      <Watch/>
       <ScanningFinger/>
   </div>
   );

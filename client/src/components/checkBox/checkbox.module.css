@@ -50,7 +50,7 @@
   transform: rotate(720deg);
 }
 
-.label text
+.label label
 {
   position: absolute;
   left: -120px;
@@ -60,13 +60,13 @@
   drop-shadow(0 0 35px #fff);
   transition: 0.5s;
 }
-.label input:checked ~ text
+.label input:checked ~ label
 {
  color: #8f8f8f;
  filter: none;
 }
 
-.label text:last-child
+.label label:last-child
 {
   position: absolute;
   left: initial;
@@ -75,7 +75,7 @@
   filter: none;
 }
 
-.label input:checked ~ text:last-child
+.label input:checked ~ label:last-child
 {
   color: #fff;
   font-size: 3em;

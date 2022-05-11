@@ -6,8 +6,8 @@ const Checkbox = () => {
       <label className={cl.label}>
         <input type="checkbox"/>
         <span ></span>
-        <text>OFF</text>
-        <text >ON</text>
+        <label>OFF</label>
+        <label>ON</label>
       </label>
     </div>
   );
