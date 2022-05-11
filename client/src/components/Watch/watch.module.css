@@ -82,3 +82,15 @@
   0 0 60px var(--clr);
 
 }
+
+@media only screen and (max-width:480px) {
+  .watch
+{
+  display: block;
+}
+
+.watch .circle
+{
+  margin-top: 20px;
+}
+}
