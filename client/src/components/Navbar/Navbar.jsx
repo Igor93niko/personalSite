@@ -1,13 +1,13 @@
 import { Grid, Typography, AppBar, Toolbar, CssBaseline } from '@mui/material';
-import React, {useState} from 'react';
+import React from 'react';
 import {makeStyles} from '@mui/styles';
-import MenuIcon from '@mui/icons-material/Menu';
 import cl from './navbar.module.css';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   bar:{
-    height:'80px'
+    height:'80px',
+    background:'#3d3d3d'
   },
   navlinks: {
     display: "flex"
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
     color:'white',
     cursor: "pointer",
     "&:hover":{
-      color:'yellow'
+      color:'#fff !important'
     }
   },
   link: {
@@ -78,31 +78,21 @@ const useStyles = makeStyles({
 
 const Navbar = () => {
   const classes = useStyles();
-  const [mobMenu,setMobMenu] = useState(cl.mobMenu);
-  const [icon, setIcon] = useState(classes.icon)
-  const clickHandler = () => {
-   setMobMenu(cl.mobMenu + ' ' + cl.active);
-   setIcon(classes.icon+' '+ classes.close);
-  }
-  const closeHandler = () => {
-   setMobMenu(cl.mobMenu);
-   setIcon(classes.icon);
-  }
+
   return (
     <>
     <AppBar position='static' color='inherit' className={classes.bar}>
       <CssBaseline/>
       <Toolbar className={cl.main}>
         <Typography fontFamily={'Oswald'} variant='h4' className={classes.logo}><Link to="/" className={cl.link}>Gari93</Link></Typography>
-        <Grid className={classes.navlinks} sx={{ display: { xs: 'none', sm: 'flex', md: 'flex' } }} >
+        <Grid className={classes.navlinks} sx={{ display: { xs: 'flex', sm: 'flex', md: 'flex' } }} >
           <Link to='animation' className={classes.link}>
             CSS-анимации
           </Link>
         </Grid>
-        <MenuIcon onClick={clickHandler} className={icon} sx={{display:{xs:'block',sm:'none',md:'none'}}}/>
       </Toolbar>
     </AppBar>
-    <Grid className={mobMenu} sx={{display:{xs:'block',sm:'none',md:'none'}}}>
+    {/* <Grid className={mobMenu} sx={{display:{xs:'block',sm:'none',md:'none'}}}>
         <span onClick={closeHandler} className={cl.close}>&times;</span>
         <Grid item display={'block'} className={classes.mobMenuDiv}>
           <Grid className={classes.mobLine}>
@@ -111,7 +101,7 @@ const Navbar = () => {
             </Typography>
           </Grid> 
         </Grid>
-      </Grid>
+      </Grid> */}
    </>
   );
 };

@@ -23,11 +23,12 @@
 .link
 {
   text-decoration: none;
-  color:aqua;
+  color:white;
 }
 
 .link:hover
 {
   cursor: pointer;
+  color: yellow;
 }
 
