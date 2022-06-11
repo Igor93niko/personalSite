@@ -143,10 +143,19 @@ code {
   display: flex;
   justify-content: center;
   width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width:480px) {
+  .mainTable
+  {
+    font-size: 0.5em;
+  }
 }
 
 .mainTable table
 {
+  max-width: 100%;
   border-collapse: separate;
   border-spacing: 0 0;
   font-family: 'Roboto';
@@ -182,11 +191,14 @@ code {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .filter .filterSelect
 {
+  margin: 10px;
   width: 150px;
   font-size: 1rem;
 }
