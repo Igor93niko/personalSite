@@ -20,7 +20,7 @@ app.use(fileUpload({}));
 app.use(express.static('public'));
 app.use('/question',require('./routes/guestions.routes'));
 app.use('/auth',require('./routes/auth.routes'));
-
+app.use('/table',require('./routes/table.routes'));
 // app.post('/upload', function(req, res) {
 //  req.files.photo.mv('public/pics/'+req.files.photo.name);
 //  res.status(200).json('Успешно добавили');

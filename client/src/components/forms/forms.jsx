@@ -1,10 +1,26 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useHttp } from '../../hooks/useHttp';
 import { useForm } from 'react-hook-form';
 import Loader from '../Loader/Loader';
 import cl from './forms.module.css';
 
 const Forms = () => {
+  const [data,setData] = useState([]);
+  
+  const getData = useCallback(async()=>{
+    const res = await fetch('http://localhost:8000/api/issue/gari1993niko@gmail.com',{method:'GET',mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    }});
+    const datas = await res.json();
+    console.log(datas,1);
+    setData(datas);
+  },[]);
+  useEffect(()=>{
+    getData();
+    console.log(data)
+  },[]);
+  
   const [classForm,setClassForm] = useState({
     form:cl.form,
     formSend:cl.formSend
@@ -35,6 +51,10 @@ const Forms = () => {
     return <Loader/>
   }
   return (
+    <>
+    <div>{data.map(data=>{
+      return<p key={data.key}>{data.key} {data.desc}</p>
+    })}</div>
     <div className={cl.formBac}>
       {classForm.form===cl.form?
       <form className={classForm.form} onSubmit={handleSubmit(clickHandler)}>
@@ -78,6 +98,7 @@ const Forms = () => {
         <h1>Форма успешно отправлена</h1>
       </div>:null}
     </div>
+    </>
   );
 };
 
