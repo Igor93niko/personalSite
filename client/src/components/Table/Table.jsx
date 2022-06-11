@@ -155,7 +155,7 @@ const Table = () => {
   },[setCurrentPage]);
 
   return (
-    <>
+    <div className='divTable'>
     <Filter filtVariant={filtVariant} changeFilter={changeFilter}/>
     <div className='mainTable'>
       <table>
@@ -205,7 +205,7 @@ const Table = () => {
       </table>
     </div>
       <Pagination pageNumber={pageNumber} changePage={changePage} currentPage={currentPage}/>
-    </>
+    </div>
   );
 };
 

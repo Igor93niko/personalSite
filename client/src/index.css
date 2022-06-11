@@ -136,10 +136,13 @@ code {
   background: goldenrod;
 }
 
+.divTable
+{
+  min-height: 90vh;
+}
 
 .mainTable
 {
-  min-height: 90vh;
   position: relative;
   display: flex;
   justify-content: center;
