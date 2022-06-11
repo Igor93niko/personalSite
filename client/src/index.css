@@ -149,6 +149,7 @@ code {
 @media screen and (max-width:480px) {
   .mainTable
   {
+    min-height: 90vh;
     font-size: 0.5em;
   }
 }
