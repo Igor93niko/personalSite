@@ -68,7 +68,7 @@ const Table = () => {
         switch (filtVariant.filCond){
           case 'equals':
             {
-              return field[filtVariant.filColl] === filtVariant.filValue;
+              return field[filtVariant.filColl] == filtVariant.filValue;
             }
           case 'more':
             {
